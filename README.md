@@ -105,20 +105,48 @@ Built an **ML-powered analytics system** that:
 
 <div align="center">
 
-### Recruitment Funnel - Stage Progression
-![Funnel](visualizations/recruitment_funnel.png)
-
-### Drop-off Analysis - Bottleneck Identification
-![Drop-off](visualizations/drop_off_analysis.png)
-
-### Source Effectiveness Comparison
-![Sources](visualizations/source_effectiveness.png)
-
-### ML Model Evaluation
-![ML Evaluation](visualizations/ml_model_evaluation.png)
-
-### Feature Importance
-![Features](visualizations/feature_importance.png)
+<table>
+<tr>
+<td width="50%">
+<h3>Recruitment Funnel</h3>
+<img src="visualizations/recruitment_funnel.png" alt="Recruitment Funnel" width="100%"/>
+</td>
+<td width="50%">
+<h3>Drop-off Analysis</h3>
+<img src="visualizations/drop_off_analysis.png" alt="Drop-off Analysis" width="100%"/>
+</td>
+</tr>
+<tr>
+<td width="50%">
+<h3>Source Effectiveness</h3>
+<img src="visualizations/source_effectiveness.png" alt="Source Effectiveness" width="100%"/>
+</td>
+<td width="50%">
+<h3>Time-to-Hire Distribution</h3>
+<img src="visualizations/survival_curve.png" alt="Time-to-Hire" width="100%"/>
+</td>
+</tr>
+<tr>
+<td width="50%">
+<h3>ML Model Evaluation</h3>
+<img src="visualizations/ml_model_evaluation.png" alt="ML Evaluation" width="100%"/>
+</td>
+<td width="50%">
+<h3>Feature Importance</h3>
+<img src="visualizations/feature_importance.png" alt="Feature Importance" width="100%"/>
+</td>
+</tr>
+<tr>
+<td width="50%">
+<h3>Time-to-Hire by Source</h3>
+<img src="visualizations/time_to_hire_by_source.png" alt="Time by Source" width="100%"/>
+</td>
+<td width="50%">
+<h3>A/B Test Results</h3>
+<img src="visualizations/ab_test_results.png" alt="A/B Testing" width="100%"/>
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -285,16 +313,8 @@ sqlite3 recruitment.db < sql/funnel_queries.sql
 
 **Divya Dhole**
 
-- 📧 Email: [your.email@example.com](mailto:your.email@example.com)
 - 💼 LinkedIn: [linkedin.com/in/divyadhole](https://linkedin.com/in/divyadhole)
 - 🐙 GitHub: [github.com/Divyadhole](https://github.com/Divyadhole)
-- 📊 Portfolio: [your-portfolio-link](https://your-portfolio.com)
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
