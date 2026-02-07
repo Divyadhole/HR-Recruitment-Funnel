@@ -1,0 +1,206 @@
+
+======================================================================
+QUERY 1: FUNNEL CONVERSION RATES BY SOURCE
+======================================================================
+
+Source                          Stage            applicants       conversion_rate  drop_off_rate_pct
+------------------------------  ---------------  ---------------  ---------------  -----------------
+Campus Hiring                   Application Rec  305                                                
+                                eived                                                               
+
+Campus Hiring                   Resume Screenin  305              100.0            0.0              
+                                g                                                                   
+
+Campus Hiring                   HR Phone Screen  212              69.51            30.49            
+
+Campus Hiring                   Technical Round  159              75.0             25.0             
+
+Campus Hiring                   Manager Intervi  91               57.23            42.77            
+                                ew                                                                  
+
+Campus Hiring                   Final Interview  69               75.82            24.18            
+
+Campus Hiring                   Offer Extended   56               81.16            18.84            
+
+Campus Hiring                   Hired            50               89.29            10.71            
+
+Company Website                 Application Rec  155                                                
+                                eived                                                               
+
+Company Website                 Resume Screenin  155              100.0            0.0              
+                                g                                                                   
+
+Company Website                 HR Phone Screen  115              74.19            25.81            
+
+Company Website                 Technical Round  92               80.0             20.0             
+
+Company Website                 Manager Intervi  53               57.61            42.39            
+                                ew                                                                  
+
+Company Website                 Final Interview  34               64.15            35.85            
+
+Company Website                 Offer Extended   30               88.24            11.76            
+
+Company Website                 Hired            30               100.0            0.0              
+
+Employee Referral               Application Rec  341                                                
+                                eived                                                               
+
+Employee Referral               Resume Screenin  341              100.0            0.0              
+                                g                                                                   
+
+Employee Referral               HR Phone Screen  251              73.61            26.39            
+
+Employee Referral               Technical Round  198              78.88            21.12            
+
+Employee Referral               Manager Intervi  102              51.52            48.48            
+                                ew                                                                  
+
+Employee Referral               Final Interview  75               73.53            26.47            
+
+Employee Referral               Offer Extended   56               74.67            25.33            
+
+Employee Referral               Hired            46               82.14            17.86            
+
+LinkedIn                        Application Rec  477                                                
+                                eived                                                               
+
+LinkedIn                        Resume Screenin  477              100.0            0.0              
+                                g                                                                   
+
+LinkedIn                        HR Phone Screen  340              71.28            28.72            
+
+LinkedIn                        Technical Round  252              74.12            25.88            
+
+LinkedIn                        Manager Intervi  138              54.76            45.24            
+                                ew                                                                  
+
+LinkedIn                        Final Interview  98               71.01            28.99            
+
+LinkedIn                        Offer Extended   82               83.67            16.33            
+
+LinkedIn                        Hired            76               92.68            7.32             
+
+Naukri                          Application Rec  184                                                
+                                eived                                                               
+
+Naukri                          Resume Screenin  184              100.0            0.0              
+                                g                                                                   
+
+Naukri                          HR Phone Screen  122              66.3             33.7             
+
+Naukri                          Technical Round  98               80.33            19.67            
+
+Naukri                          Manager Intervi  53               54.08            45.92            
+                                ew                                                                  
+
+Naukri                          Final Interview  34               64.15            35.85            
+
+Naukri                          Offer Extended   31               91.18            8.82             
+
+Naukri                          Hired            28               90.32            9.68             
+
+Recruitment Agency              Application Rec  18                                                 
+                                eived                                                               
+
+Recruitment Agency              Resume Screenin  18               100.0            0.0              
+                                g                                                                   
+
+Recruitment Agency              HR Phone Screen  16               88.89            11.11            
+
+Recruitment Agency              Technical Round  11               68.75            31.25            
+
+Recruitment Agency              Manager Intervi  5                45.45            54.55            
+                                ew                                                                  
+
+Recruitment Agency              Final Interview  1                20.0             80.0             
+
+Recruitment Agency              Offer Extended   1                100.0            0.0              
+
+Recruitment Agency              Hired            1                100.0            0.0              
+
+======================================================================
+QUERY 2: HIGHEST DROP-OFF STAGES
+======================================================================
+
+Stage                           Stage_Sequence   total_applicant  rejected         rejection_rate_pct
+------------------------------  ---------------  ---------------  ---------------  ------------------
+Technical Round                 4                810              368              45.43             
+Hired                           8                231              93               40.26             
+Manager Interview               5                442              131              29.64             
+Resume Screening                2                1480             424              28.65             
+HR Phone Screen                 3                1056             246              23.3              
+Final Interview                 6                311              55               17.68             
+Offer Extended                  7                256              25               9.77              
+Application Received            1                1480             0                0.0               
+
+======================================================================
+QUERY 3: SOURCE EFFECTIVENESS (LinkedIn 2.1x Better Analysis)
+======================================================================
+
+Source                          total_applicant  hired_count      hire_rate_pct    avg_time_to_hire  vs_naukri_multiplier
+------------------------------  ---------------  ---------------  ---------------  ----------------  --------------------
+Employee Referral               341              42               12.32            46.0              2.52                
+Campus Hiring                   305              30               9.84             44.0              2.01                
+LinkedIn                        477              44               9.22             43.2              1.89                
+Company Website                 155              13               8.39             39.8              1.71                
+Naukri                          184              9                4.89             40.9              1.0                 
+Recruitment Agency              18               0                0.0              42.0              0.0                 
+
+======================================================================
+QUERY 4: STAGE-BY-STAGE FUNNEL
+======================================================================
+
+Stage_Sequence                  Stage            applicants       previous_stage   retention_rate_pct  drop_off_pct
+------------------------------  ---------------  ---------------  ---------------  ------------------  ------------
+1                               Application Rec  1480                                                              
+                                eived                                                                              
+
+2                               Resume Screenin  1480             1480             100.0               0.0         
+                                g                                                                                  
+
+3                               HR Phone Screen  1056             1480             71.35               28.65       
+
+4                               Technical Round  810              1056             76.7                23.3        
+
+5                               Manager Intervi  442              810              54.57               45.43       
+                                ew                                                                                 
+
+6                               Final Interview  311              442              70.36               29.64       
+
+7                               Offer Extended   256              311              82.32               17.68       
+
+8                               Hired            231              256              90.23               9.77        
+
+======================================================================
+QUERY 5: TIME-TO-HIRE DISTRIBUTION
+======================================================================
+
+time_bucket                     hired_count      avg_days       
+------------------------------  ---------------  ---------------
+0-30 days                       1                28.0           
+31-60 days                      135              45.5           
+61-90 days                      2                62.5           
+
+======================================================================
+QUERY 6: DEPARTMENT-WISE HIRING PERFORMANCE
+======================================================================
+
+Department                      total_applicant  hired            hire_rate_pct  
+------------------------------  ---------------  ---------------  ---------------
+Human Resources                 63               8                12.7           
+Research & Development          967              101              10.44          
+Sales                           450              29               6.44           
+
+======================================================================
+QUERY 7: GENDER DIVERSITY IN HIRING
+======================================================================
+
+Gender                          total_applicant  hired            hire_rate_pct  
+------------------------------  ---------------  ---------------  ---------------
+Male                            889              77               8.66           
+Female                          591              61               10.32          
+
+======================================================================
+SQL ANALYSIS COMPLETE
+======================================================================

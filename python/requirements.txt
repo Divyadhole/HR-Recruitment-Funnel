@@ -1,0 +1,37 @@
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.0
+sqlalchemy>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+lifelines>=0.27.0
+
+# Machine Learning
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+imbalanced-learn>=0.11.0
+joblib>=1.3.0
+
+# Dashboard
+streamlit>=1.28.0
+plotly>=5.17.0
+
+# API
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.4.0
+python-multipart>=0.0.6
+
+# Reporting
+reportlab>=4.0.0
+jinja2>=3.1.0
+weasyprint>=60.0
+
+# Advanced Analytics
+scipy>=1.11.0
+statsmodels>=0.14.0
+networkx>=3.2.0
+
+# Utilities
+python-dotenv>=1.0.0
+requests>=2.31.0
